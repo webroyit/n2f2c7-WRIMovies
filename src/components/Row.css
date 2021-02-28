@@ -1,5 +1,13 @@
 .row__posters {
     display: flex;
+    overflow-y: hidden;         /* Hide vertical scroll bar */
+    overflow-x: scroll;         /* Allow scrolling on horizontal */
+    padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar {
+    /* Hide the scroll bar but keep the functionally of it */
+    display: none;
 }
 
 .row__poster {
