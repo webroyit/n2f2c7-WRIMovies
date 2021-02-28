@@ -1,3 +1,7 @@
+.row {
+    margin-left: 10px;
+}
+
 .row__posters {
     display: flex;
     overflow-y: hidden;         /* Hide vertical scroll bar */
@@ -14,7 +18,7 @@
     object-fit: contain;
     width: 100%;
     max-height: 100px;
-    margin-right: 7px;
+    margin-right: 10px;
 
     /* Delay the animation */
     transition: transform 450ms;
@@ -23,4 +27,12 @@
 /* animation */
 .row__poster:hover{
     transform: scale(1.08);
+}
+
+.row__posterLarge {
+    max-height: 200px;
+}
+
+.row__poster:hover {
+    transform: scale(1.09);
 }
