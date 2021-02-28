@@ -1,0 +1,18 @@
+.row__posters {
+    display: flex;
+}
+
+.row__poster {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100px;
+    margin-right: 7px;
+
+    /* Delay the animation */
+    transition: transform 450ms;
+}
+
+/* animation */
+.row__poster:hover{
+    transform: scale(1.08);
+}
