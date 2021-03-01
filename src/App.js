@@ -3,11 +3,13 @@ import './App.css';
 
 import requests from './requests';
 import Row from './components/Row';
+import Banner from './components/Banner';
 
 function App() {
   return (
     <div className="App">
       <h1>WRI Movies</h1>
+      <Banner />
       <Row
         title="Trending Now"
         fetchUrl={requests.fetchTrending}
