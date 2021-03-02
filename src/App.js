@@ -3,11 +3,13 @@ import './App.css';
 
 import requests from './requests';
 import Row from './components/Row';
+import Nav from './components/Nav';
 import Banner from './components/Banner';
 
 function App() {
   return (
     <div className="App">
+      <Nav />
       <Banner />
       <Row
         title="Trending Now"
