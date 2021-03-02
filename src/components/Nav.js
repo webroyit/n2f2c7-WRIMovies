@@ -27,10 +27,14 @@ function Nav() {
                 className="nav__logo"
                 src="images/logo.png"
                 alt="Logo" />
-            <img
-                className="nav__avatar"
-                src="images/icon.png"
-                alt="Icon" />
+            <div className="nav__area">
+                <p>All data are from </p>
+                <img
+                    className="nav__avatar"
+                    src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_1-5bdc75aaebeb75dc7ae79426ddd9be3b2be1e342510f8202baf6bffa71d7f5c4.svg"
+                    alt="Icon" />
+            </div>
+           
         </div>
     )
 }

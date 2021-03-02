@@ -16,13 +16,23 @@
     background-color: #200f21;
 }
 
+.nav__area {
+    display: flex;
+    align-items: center;
+}
+
+.nav__area > p {
+    color: #E0C45C;
+    font-size: .8rem;
+    margin-right: .8rem;
+}
 .nav__logo {
     width: 150px;
     object-fit: contain;
 }
 
 .nav__avatar {
-    width: 30px;
+    width: 50px;
     object-fit: contain;
     margin-right: 1rem;
     filter: invert(1);
