@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import YouTube from "react-youtube";
 
 import axios from '../axios';
 import "./Row.css";
@@ -23,6 +24,14 @@ function Row({ title, fetchUrl, isLargeRow }) {
         // If you use variables that is being pulled in from outside, you need to include it in the array
     }, [fetchUrl]);
 
+    const opts = {
+        height: "390",
+        width: "100%",
+        playerVars: {
+            autoplay: 1
+        }
+    }
+
     return (
         <div className="row">
             <h2>{title}</h2>
@@ -36,6 +45,8 @@ function Row({ title, fetchUrl, isLargeRow }) {
                         alt={movie.name} />
                 ))}
             </div>
+
+            <YouTube videoId={""} opts={opts} />
         </div>
     )
 }
